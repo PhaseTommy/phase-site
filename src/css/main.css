@@ -15,7 +15,6 @@ body {
 html {
     font-family: sofia-pro;
     font-size: 16px;
-    overflow-x: hidden;
 
 }
 
@@ -358,6 +357,8 @@ p {
 
 @media only screen and (max-width: 525px) {
 
+
+
     .hero-text-wrapper {
         margin-top: 130px;
     }
@@ -396,12 +397,27 @@ p {
         background-repeat: no-repeat;
     }
 
+    .releases-text::before {
+        background: url("/src/images/releases-icon-small.svg") no-repeat;
+
+    }
+
+    .profiles-text::before {
+        background: url("/src/images/profile-icon-small.svg") no-repeat;
+
+    }
+
+    .yeezy-text::before {
+        background: url("/src/images/browser-icon-small.svg") no-repeat;
+
+    }
+
+
     .releases-text::before,
     .profiles-text::before,
     .yeezy-text::before {
         content: "";
         display: block;
-        background: url("/src/images/releases-icon-small.svg") no-repeat;
         width: 50px;
         height: 50px;
         position: absolute;
