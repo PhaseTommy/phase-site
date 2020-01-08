@@ -7,13 +7,18 @@ body {
     transition: opacity 2s;
     -webkit-transition: opacity 2s;
     /* Safari */
-    overflow-x: hidden;
     overflow-y: scroll;
 }
 
 html {
     font-family: sofia-pro;
     font-size: 16px;
+}
+
+.window-wrapper {
+    overflow-x: hidden;
+    position: relative;
+
 }
 
 .background-image {
@@ -45,7 +50,7 @@ html {
 }
 
 .hero-text-wrapper {
-    margin-top: 175px;
+    margin-top: 160px;
 }
 
 
@@ -117,6 +122,8 @@ html {
 }
 
 @media only screen and (max-width: 1320px) {
+
+
     .placeholder-image {
         display: none;
     }
@@ -319,6 +326,8 @@ p {
 }
 
 @media only screen and (max-width: 800px) {
+
+
     .tools-section {
         display: flex;
         flex-wrap: wrap;
@@ -340,6 +349,11 @@ p {
 }
 
 @media only screen and (max-width: 525px) {
+
+    .hero-text-wrapper {
+        margin-top: 130px;
+    }
+
     .tools-section {
         display: flex;
         flex-wrap: wrap;
